@@ -59,8 +59,7 @@ The project uses the **Telco Customer Churn Dataset** (sourced from Kaggle).
 * **Primary Metric:** Recall (Sensitivity)
 * *Why Recall?* In churn analysis, a **False Negative** (predicting a customer will stay when they actually leave) is the most costly error. Therefore, the model is optimized to capture as many potential churners as possible.
 
-## 📸 Screenshots
-*(Optional: Add screenshots of your Streamlit dashboard or Confusion Matrix here)*
+
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
