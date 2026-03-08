@@ -1,68 +1,80 @@
-# FUTURE_ML_02
-Future_Interns Task 2 - Churn Analysis
+<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Telecom%20Churn%20Analysis&fontSize=46&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Predicting%20customer%20churn%20before%20it%20happens&descAlignY=62&descSize=18"/>
+</div>
 
-# 📉 Customer Churn Prediction System
+<div align="center">
 
-## 📋 Project Overview
-In industries like telecommunications, retaining customers is often more profitable than acquiring new ones. This project is a **Churn Prediction System** designed to identify customers who are likely to stop using a service.
+![Python](https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-0D1117?style=for-the-badge&logo=scikit-learn&logoColor=F7931E)
+![Streamlit](https://img.shields.io/badge/Streamlit-0D1117?style=for-the-badge&logo=streamlit&logoColor=FF4B4B)
+![Jupyter](https://img.shields.io/badge/Jupyter-0D1117?style=for-the-badge&logo=jupyter&logoColor=F37626)
+![License](https://img.shields.io/badge/License-MIT-0D1117?style=for-the-badge)
 
-Using historical customer data, I built a machine learning model to predict churn probability and identifying key indicators (churn drivers). The final output is an interactive dashboard that allows business decision-makers to assess risk and take proactive retention measures.
+</div>
 
-## 🚀 Key Features
-* **Data Analysis:** Comprehensive EDA (Exploratory Data Analysis) to understand customer demographics and service usage patterns.
-* **Predictive Modeling:** Trained classification models (Logistic Regression, Random Forest, XGBoost) to predict customer churn.
-* **Imbalanced Data Handling:** Utilized techniques like SMOTE (Synthetic Minority Over-sampling Technique) to handle class imbalance.
-* **Model Evaluation:** Focused on **Recall** and **F1-Score** to minimize false negatives (missing at-risk customers).
-* **Interactive Dashboard:** A user-friendly web app built with **Streamlit** to demo the model in real-time.
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2"/>
 
-## 🛠️ Technologies Used
-* **Language:** Python
-* **Data Manipulation:** Pandas, NumPy
-* **Visualization:** Matplotlib, Seaborn
-* **Machine Learning:** Scikit-learn, XGBoost, Imbalanced-learn (SMOTE)
-* **Model Deployment:** Streamlit, Pickle
+## 📡 About
 
-## 📂 Dataset
-The project uses the **Telco Customer Churn Dataset** (sourced from Kaggle).
-* **Rows:** 7,043 customers
-* **Features:** 21 columns including:
-    * *Demographics:* Gender, Senior Citizen, Partner, Dependents
-    * *Services:* Phone, Internet, Online Security, Tech Support
-    * *Account:* Contract, Payment Method, Monthly Charges, Tenure
-    * *Target:* Churn (Yes/No)
+A full ML pipeline for predicting customer churn in the telecom sector — from raw data exploration to trained models deployed behind a Streamlit app.
 
-## 📊 Project Workflow
-1.  **Data Preprocessing:** Handling missing values (`TotalCharges`), encoding categorical variables (One-Hot Encoding), and feature scaling.
-2.  **Exploratory Data Analysis (EDA):** Visualizing churn rates across different contract types, payment methods, and tenure.
-3.  **Model Building:** Training multiple classifiers and tuning hyperparameters.
-4.  **Evaluation:** Analyzing the Confusion Matrix to maximize Recall.
-5.  **Deployment:** Saving the best model using `pickle` and building the Streamlit interface.
+Three production-ready models trained and saved: Decision Tree, Gradient Boosting, and Random Forest. Load any of them and predict churn in real time.
 
-## ⚙️ Installation & Usage
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2"/>
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <"https://github.com/derrickrajkumar10/FUTURE_ML_02.git">
-    ```
+## ✨ Features
 
-2.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+- 🔍 **Deep EDA** — exploration of churn drivers, patterns, and correlations
+- 🤖 **3 trained models** — Decision Tree, Gradient Boosting, Random Forest (`.pkl` files included)
+- 🌐 **Streamlit app** — real-time churn prediction via a clean UI
+- 📊 **Feature importance** — understand what actually drives customers to leave
+- 🔄 **End-to-end pipeline** — raw CSV → cleaned features → model → live predictions
 
-3.  **Run the Streamlit App:**
-    ```bash
-    streamlit run app.py
-    ```
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2"/>
 
-## 📈 Model Performance
-* **Primary Metric:** Recall (Sensitivity)
-* *Why Recall?* In churn analysis, a **False Negative** (predicting a customer will stay when they actually leave) is the most costly error. Therefore, the model is optimized to capture as many potential churners as possible.
+## 🛠 Tech Stack
 
+| Layer | Technology |
+|-------|-----------|
+| **Language** | Python 3.x |
+| **ML** | scikit-learn (Decision Tree, Gradient Boosting, Random Forest) |
+| **App** | Streamlit |
+| **Data** | Pandas · NumPy |
+| **Visualisation** | Matplotlib · Seaborn |
+| **Notebooks** | Jupyter |
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2"/>
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
+## 🚀 Getting Started
 
-## 📜 License
-This project is licensed under the MIT License.
+```bash
+git clone https://github.com/derrickrajkumar10/Churn-Analysis-in-Telecom-Sector.git
+cd Churn-Analysis-in-Telecom-Sector
+
+pip install -r requirements.txt
+
+# Launch the Streamlit churn predictor
+streamlit run app.py
+```
+
+The app loads the saved models automatically — no retraining needed.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2"/>
+
+## 📁 Project Structure
+
+```
+├── Churn_Analysis_EDA.ipynb      # Exploratory Data Analysis
+├── Churn_Prediction.ipynb        # Model training and evaluation
+├── app.py                        # Streamlit prediction app
+├── churn_model_dt.pkl            # Saved Decision Tree model
+├── churn_model_gb.pkl            # Saved Gradient Boosting model
+├── churn_model_rf.pkl            # Saved Random Forest model
+├── model.joblib                  # Primary model (joblib format)
+├── data/                         # Raw and processed datasets
+└── requirements.txt
+```
+
+<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+</div>
